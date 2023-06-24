@@ -1,0 +1,10 @@
+.app{
+
+  background-image: url('./constants/images/bkgrnd_image.jpg');
+  background-attachment: fixed; 
+  background-size: cover; 
+ 
+}
+.app> background-image{
+  opacity:50%;
+}

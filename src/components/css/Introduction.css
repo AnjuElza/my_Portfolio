@@ -1,0 +1,22 @@
+.name{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #f0f0f0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.name_heading{
+    font-size: 4rem;
+    font-weight: 650;
+    margin-bottom: 0.5rem; 
+}
+.name>p{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
