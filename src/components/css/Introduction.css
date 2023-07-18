@@ -19,4 +19,18 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+.introduction {
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 100px;
+    height: 100px; 
+  }
+  .blue-letter {
+    color: blue;
+  }
 

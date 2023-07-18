@@ -1,0 +1,23 @@
+.modal-content {
+    position: relative;
+  }
+  
+  .close-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px; /* Add margin to separate from the content */
+  }
+  
+  .close-button {
+    margin: 0;
+    padding: 0;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .button-container button {
+    margin: 0 5px; /* Adjust the horizontal spacing between buttons */
+  }

@@ -1,5 +1,4 @@
 import Header from './Header';
-import Sidebar from './Sidebar';
 import Footer from './Footer';
 import Introduction from './Introduction';
 import About from './About';
@@ -10,7 +9,6 @@ function Main(){
     return(
         
         <><Header />
-        <Sidebar />
         <Introduction />
         <About />
         <Skills />

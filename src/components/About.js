@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import EmailIcon from '@mui/icons-material/Email';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
-import Photo from "../constants/images/photo.jpg";
+
 import './css/About.css';
 function About(){
     return(
        <>
        <div className='about_container' id="about">
-       <p className='about_heading'>About Me</p>
+       <p className='about_heading'><span className="blue-letter">A</span>BOUT <span className="blue-letter">M</span>E</p>
         <div className='about'>
        <Box className='about_box' sx={{}}>
        

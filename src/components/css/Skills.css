@@ -1,10 +1,15 @@
-/* #skills{
+#skills{
         height: 100vh;
         width: 100%; 
-} */
+        background: #f0f0f0;
+}
+
+#skills_container{
+    padding: 2px;
+}
 
 .skills_heading{
-    margin-top: 56px;
+    
     margin-left: 5px;
     margin-bottom: 3px;
     font-size: xx-large;

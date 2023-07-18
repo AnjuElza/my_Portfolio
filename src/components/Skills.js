@@ -72,7 +72,7 @@ function Skills(){
         return(
 
                 <Paper elevation={4}
-                    sx={{ width: '100px', height: '100px', mt: 2, padding: 1, mb: 2 }}>
+                    sx={{ width: '100px', height: '100px', mt: 2, padding: 1, mb: 2, borderBottom: '3px solid blue' }}>
                     <img className="skill_img"
                         src={logo}
                         alt="logo"
@@ -84,13 +84,15 @@ function Skills(){
     }
     return(
         <div id="skills">
-        <><p className='skills_heading'>Skills</p>
+            <div id="skills_container">
+        <><p className='skills_heading'><span className="blue-letter">S</span>KILLS</p>
         <Box className='skills_box' >
             {skills.map(({ skill, logo }) => (
                 <SkillDetails skill={skill} logo={logo} />
             ))}
             </Box>
            </>
+           </div>
         </div>
     )
 }

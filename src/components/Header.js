@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-scroll';
+import Photo from "../constants/images/photo.jpg";
 import './css/Header.css';
 
 function Header(){
@@ -25,7 +26,10 @@ function Header(){
             sx={{ height: '90px', display: 'flex', justifyContent: 'center' }}>
             <Container maxWidth="xl">
               <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <div>
+                <div className="logo_name_container">
+                <div className="photo">
+    <img src={Photo} alt="Anju" height={50} width={50} />
+  </div>
                   <Typography variant="h4" noWrap component="a" sx={{
                     fontFamily: 'Source Sans Pro, sans-serif',
                     fontWeight: 600,
@@ -33,6 +37,12 @@ function Header(){
                     color: 'black',
                     textDecoration: 'none',
                   }}>
+                      {/* <img
+                className="photo"
+                src={Photo}
+                alt="Anju"
+                height={40} width={40}     
+                /> */}
                     ANJU ELZA ACHENKUNJU
                   </Typography>
                 </div>
@@ -56,7 +66,7 @@ function Header(){
                         </Link>
                         </Button>
                       <Button sx={{ mx: 2, color: 'black' }}>
-                      <Link to="contact" smooth={true} duration={500} offset={-90}>
+                      <Link to="contact" smooth={true} duration={500} offset={-100}>
                         Contact Me
                         </Link>
                         </Button>

@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
-
+import Fmail_image from "../constants/images/fmail_image.png";
 import './css/Projects.css';
 import { FastmailDetails } from './FastmailDetails';
 
@@ -23,14 +23,14 @@ function Projects(){
     };
     return(
         <div id="projects">
-        <><p className='proj_heading'>Projects</p>
+        <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
-            <Card sx={{ maxWidth: 400, height:350 }} onClick={openModal}>
+            <Card sx={{ maxWidth: 500, height:400 , elevation:3 }} onClick={openModal}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="170"
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        height="200"
+                        image={Fmail_image}
                         alt="Fast Mail" />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -50,11 +50,11 @@ function Projects(){
             {isModalOpen && (
             <FastmailDetails isOpen={isModalOpen} onClose={closeModal} />
             )}
-            <Card sx={{ maxWidth: 400, height:350, elevation:3 }}>
+            <Card sx={{ maxWidth: 500, height:400, elevation:3 }}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="170"
+                        height="200"
                         image="/static/images/cards/contemplative-reptile.jpg"
                         alt="Movie Info" />
                     <CardContent>
@@ -73,11 +73,11 @@ function Projects(){
                 </CardActionArea>
             </Card>
 
-            <Card sx={{ maxWidth: 400, height:350, elevation:3 }}>
+            <Card sx={{ maxWidth: 500, height:400, elevation:3 }}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="170"
+                        height="200"
                         image="/static/images/cards/contemplative-reptile.jpg"
                         alt="Shopping Assistant" />
                     <CardContent>
