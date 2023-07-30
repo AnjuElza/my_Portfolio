@@ -16,7 +16,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-scroll';
 import Photo from "../constants/images/photo.jpg";
 import './css/Header.css';
-
+import Logo from "../constants/images/anju_logo.jpg";
 const resumePdfLink = 'https://drive.google.com/file/d/1HyKIkJlNl8KmaFivxzaBG8G1geWcALEo/view?usp=drive_link';
 
 function Header(){
@@ -30,7 +30,8 @@ function Header(){
               <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div className="logo_name_container">
                 <div className="photo">
-    <img src={Photo} alt="Anju" height={50} width={50} />
+    {/* <img src={Photo} alt="Anju" height={50} width={50} /> */}
+    <img src={Logo} alt="Logo" height={60} width={60} />
   </div>
                   <Typography variant="h4" noWrap component="a" sx={{
                     fontFamily: 'Source Sans Pro, sans-serif',

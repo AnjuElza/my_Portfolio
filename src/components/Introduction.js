@@ -3,7 +3,7 @@ import Logo from "../constants/images/anju_logo.jpg";
 function Introduction(){
     return(
         <div className="introduction">
-        <img src={Logo} alt="Logo" className="logo" />
+        {/* <img src={Logo} alt="Logo" className="logo" /> */}
 
         <div className='name'>
           

@@ -9,7 +9,7 @@ import './css/Main.css';
 import { Container, Grid } from '@mui/material';
 function Main(){
     return(
-        <Container maxWidth="xl">
+        // <Container maxWidth="xl">
         <>
         
         
@@ -27,7 +27,7 @@ function Main(){
         <Footer />
         
         </>
-        </Container>
+        // </Container>
     )
 }
 
