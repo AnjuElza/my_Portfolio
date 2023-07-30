@@ -17,6 +17,8 @@ import { Link } from 'react-scroll';
 import Photo from "../constants/images/photo.jpg";
 import './css/Header.css';
 
+const resumePdfLink = 'https://drive.google.com/file/d/1HyKIkJlNl8KmaFivxzaBG8G1geWcALEo/view?usp=drive_link';
+
 function Header(){
     const pages = ['About', 'Skills', 'Projects','Contact Me'];
   
@@ -70,6 +72,14 @@ function Header(){
                         Contact Me
                         </Link>
                         </Button>
+                        <Button sx={{ mx: 2, color: 'black' }}
+                
+                href={resumePdfLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </Button>
                    
                   </Box>
                  

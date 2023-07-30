@@ -44,3 +44,11 @@
   height:500px;
   width:80%
 }
+  /* Media query for smaller screens, adjust as needed */
+  @media (max-width: 768px) {
+    #projects{
+      height: auto; /* Remove the fixed height and let the content determine the height */
+        min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+      }
+    }
+    

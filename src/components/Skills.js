@@ -11,6 +11,7 @@ import Aws_icon from "../constants/icons/aws_icon.png";
 import Bootstrap_icon from "../constants/icons/bootstrap_icon.jpg";
 import Git_icon from "../constants/icons/github_icon1.png";
 import Paper from '@mui/material/Paper';
+import {Grid, useMediaQuery } from '@mui/material';
 import Box from '@mui/material/Box';
 import './css/Skills.css';
 
@@ -69,10 +70,13 @@ function Skills(){
     ];
 
     function SkillDetails({skill,logo}){
+        
         return(
 
                 <Paper elevation={4}
-                    sx={{ width: '100px', height: '100px', mt: 2, padding: 1, mb: 2, borderBottom: '3px solid blue' }}>
+                    sx={{ width:'100px',
+                    height: '100px',
+                     mt: 2, padding: 1, mb: 2, borderBottom: '3px solid blue' }}>
                     <img className="skill_img"
                         src={logo}
                         alt="logo"
