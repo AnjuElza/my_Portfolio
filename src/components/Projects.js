@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
 import Fmail_image from "../constants/images/fmail_image.png";
+import movie_app_logo from "../constants/images/movie_app_logo.png";
+import shopping_logo from "../constants/images/shopping_logo.png";
 import './css/Projects.css';
 import { FastmailDetails } from './FastmailDetails';
 import { MovieAppDetails } from './MovieAppDetails';
@@ -39,11 +41,11 @@ function Projects(){
         <div id="projects">
         <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
-            <Card sx={{ maxWidth: 500, height:400 , elevation:3 }} onClick={openModal1}>
+            <Card sx={{ maxWidth: 500, height:430 , elevation:3 }} onClick={openModal1}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="200"
+                        height="220"
                         image={Fmail_image}
                         alt="Fast Mail" />
                     <CardContent>
@@ -64,12 +66,12 @@ function Projects(){
             {isModal1Open && (
             <FastmailDetails isOpen={isModal1Open} onClose={closeModal1} />
             )}
-            <Card sx={{ maxWidth: 500, height:400, elevation:3 }} onClick={openModal2}>
+            <Card sx={{ maxWidth: 500, height:430, elevation:3 }} onClick={openModal2}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="200"
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        height="220"
+                        image={movie_app_logo}
                         alt="Movie Info" />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -89,12 +91,12 @@ function Projects(){
             {isModal2Open && (
             <MovieAppDetails isOpen={isModal2Open} onClose={closeModal2} />
             )}
-            <Card sx={{ maxWidth: 500, height:400, elevation:3 }} onClick={openModal3}>
+            <Card sx={{ maxWidth: 500, height:430, elevation:3 }} onClick={openModal3}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
-                        height="200"
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        height="220"
+                        image={shopping_logo}
                         alt="Shopping Assistant" />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
