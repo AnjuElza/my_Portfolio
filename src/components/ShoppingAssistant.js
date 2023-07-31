@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import './css/FastmailDetails.css';
 export function MovieAppDetails({ onClose }) {
     const ShoppingAssistantLive = () => {
-        window.open('https://easy-ray-slippers.cyclic.app', '_blank');
+        window.open('https://anju-movie-info-app.netlify.app/', '_blank');
     };
 const ShoppingAssistantSourceCodeFrontend = () => {
     window.open('https://github.com/AnjuElza/Shopping_assistant', '_blank');
