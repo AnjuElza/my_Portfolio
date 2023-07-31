@@ -83,7 +83,7 @@ function Projects(){
                            
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal1}>Learn More</Button>
+                    <Button size="small" onClick={openModal2}>Learn More</Button>
                 </CardActionArea>
             </Card>
             {isModal2Open && (
