@@ -23,7 +23,7 @@ export function MovieAppDetails({ onClose }) {
         </IconButton>
       </Button>
     </div>
-                <h2>FastMail</h2>
+                <h2>Movie Info App</h2>
                 <h5>Project Overview</h5>
                 <p>Movie Info App is an app giving details about movie like name,summary,rating,poster and trailer. Fetaures like Add movie, Edit movie
                     and Delete movie are isModalOpenusing CRUD operations. Formik is used for form validation.
