@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import './css/FastmailDetails.css';
-export function MovieAppDetails({ onClose }) {
+export function ShoppingAssistantDetails({ onClose }) {
     const ShoppingAssistantLive = () => {
         window.open('https://anju-movie-info-app.netlify.app/', '_blank');
     };

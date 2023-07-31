@@ -9,6 +9,7 @@ import Fmail_image from "../constants/images/fmail_image.png";
 import './css/Projects.css';
 import { FastmailDetails } from './FastmailDetails';
 import { MovieAppDetails } from './MovieAppDetails';
+import { ShoppingAssistantDetails } from './ShoppingAssistant';
 function Projects(){
     const [isModal1Open, setIsModal1Open] = useState(false);
     const [isModal2Open, setIsModal2Open] = useState(false);
@@ -111,7 +112,7 @@ function Projects(){
                 </CardActionArea>
             </Card>
             {isModal3Open && (
-            <MovieAppDetails isOpen={isModal3Open} onClose={closeModal3} />
+            <ShoppingAssistantDetails isOpen={isModal3Open} onClose={closeModal3} />
             )}
         </div></>
         </div>
