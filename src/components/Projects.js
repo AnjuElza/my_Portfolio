@@ -8,24 +8,37 @@ import Button from '@mui/material/Button';
 import Fmail_image from "../constants/images/fmail_image.png";
 import './css/Projects.css';
 import { FastmailDetails } from './FastmailDetails';
-
+import { MovieAppDetails } from './MovieAppDetails';
 function Projects(){
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [isModal1Open, setIsModal1Open] = useState(false);
+    const [isModal2Open, setIsModal2Open] = useState(false);
+    const [isModal3Open, setIsModal3Open] = useState(false);
     // Function to handle opening the modal
-    const openModal = () => {
-      setIsModalOpen(true);
+    const openModal1 = () => {
+      setIsModal1Open(true);
     };
+    const openModal2 = () => {
+        setIsModal2Open(true);
+      };
+      const openModal3 = () => {
+        setIsModal3Open(true);
+      };
   
     // Function to handle closing the modal
-    const closeModal = () => {
-      setIsModalOpen(false);
+    const closeModal1 = () => {
+      setIsModal1Open(false);
     };
+    const closeModal2 = () => {
+        setIsModal2Open(false);
+      };
+      const closeModal3 = () => {
+        setIsModal3Open(false);
+      };
     return(
         <div id="projects">
         <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
-            <Card sx={{ maxWidth: 500, height:400 , elevation:3 }} onClick={openModal}>
+            <Card sx={{ maxWidth: 500, height:400 , elevation:3 }} onClick={openModal1}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -44,13 +57,13 @@ function Projects(){
                             Bcrypt is used for encrypting the passwords and JWT is used for authentication.
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal}>Learn More</Button>
+                    <Button size="small" onClick={openModal1}>Learn More</Button>
                 </CardActionArea>
             </Card>
-            {isModalOpen && (
-            <FastmailDetails isOpen={isModalOpen} onClose={closeModal} />
+            {isModal1Open && (
+            <FastmailDetails isOpen={isModal1Open} onClose={closeModal1} />
             )}
-            <Card sx={{ maxWidth: 500, height:400, elevation:3 }}>
+            <Card sx={{ maxWidth: 500, height:400, elevation:3 }} onClick={openModal2}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -69,11 +82,13 @@ function Projects(){
                            
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal}>Learn More</Button>
+                    <Button size="small" onClick={openModal1}>Learn More</Button>
                 </CardActionArea>
             </Card>
-
-            <Card sx={{ maxWidth: 500, height:400, elevation:3 }}>
+            {isModal2Open && (
+            <MovieAppDetails isOpen={isModal2Open} onClose={closeModal2} />
+            )}
+            <Card sx={{ maxWidth: 500, height:400, elevation:3 }} onClick={openModal3}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -92,8 +107,12 @@ function Projects(){
                            
                         </Typography>
                     </CardContent>
+                    <Button size="small" onClick={openModal3}>Learn More</Button>
                 </CardActionArea>
             </Card>
+            {isModal3Open && (
+            <MovieAppDetails isOpen={isModal3Open} onClose={closeModal3} />
+            )}
         </div></>
         </div>
     )
