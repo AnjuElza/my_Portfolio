@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import './css/FastmailDetails.css';
 export function MovieAppDetails({ onClose }) {
     const MovieInfoLive = () => {
-        window.open('https://movie-app-q6bh.onrender.com', '_blank');
+        window.open('https://anju-movie-info-app.netlify.app', '_blank');
     };
     const MovieInfoSourceCodeFrontend = () => {
         window.open('https://github.com/AnjuElza/movie_app_frontend', '_blank');
