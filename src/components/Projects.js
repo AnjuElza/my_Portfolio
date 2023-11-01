@@ -5,18 +5,25 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
+import WhatToCook_image from "../constants/images/what_to_cook_logo.png";
 import Fmail_image from "../constants/images/fmail_image.png";
 import movie_app_logo from "../constants/images/movie_app_logo.png";
 import shopping_logo from "../constants/images/shopping_logo.png";
+
 import './css/Projects.css';
+import { WhatToCooklDetails } from './WhatToCook';
 import { FastmailDetails } from './FastmailDetails';
 import { MovieAppDetails } from './MovieAppDetails';
 import { ShoppingAssistantDetails } from './ShoppingAssistant';
 function Projects(){
+    const [isModal0Open, setIsModal0Open] = useState(false);
     const [isModal1Open, setIsModal1Open] = useState(false);
     const [isModal2Open, setIsModal2Open] = useState(false);
     const [isModal3Open, setIsModal3Open] = useState(false);
     // Function to handle opening the modal
+    const openModal0 = () => {
+        setIsModal0Open(true);
+      };
     const openModal1 = () => {
       setIsModal1Open(true);
     };
@@ -28,6 +35,9 @@ function Projects(){
       };
   
     // Function to handle closing the modal
+    const closeModal0 = () => {
+        setIsModal0Open(false);
+      };
     const closeModal1 = () => {
       setIsModal1Open(false);
     };
@@ -41,7 +51,30 @@ function Projects(){
         <div id="projects">
         <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
-            <Card sx={{ maxWidth: 500, height:430 , elevation:3 }} onClick={openModal1}>
+        <Card sx={{ width: 500, height:470 , elevation:3 }} onClick={openModal0}>
+                <CardActionArea >
+                    <CardMedia
+                        component="img"
+                        height="220"
+                        image={WhatToCook_image}
+                        alt="What To Cook" />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            What to Cook
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            'What to Cook' is a React app. We can search recipes for an ingredient in this app.<br></br>
+                            Frontend: Reactjs, React Bootstrap
+                           
+                        </Typography>
+                    </CardContent>
+                    <Button size="small" onClick={openModal0}>Learn More</Button>
+                </CardActionArea>
+            </Card>
+            {isModal0Open && (
+            <WhatToCooklDetails isOpen={isModal0Open} onClose={closeModal0} />
+            )}
+            <Card sx={{ width: 500, height:470 , elevation:3 }} onClick={openModal1}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -53,10 +86,10 @@ function Projects(){
                             FastMail
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            FastMail is an emailing app similar to GMail.
-                            Frontend: Reactjs
-                            Database: MongoDB
-                            Backend: Nodejs, Expressjs
+                            FastMail is a fullstack emailing app similar to GMail, usig MERN stack.<br></br>
+                            Frontend: Reactjs<br></br>
+                            Database: MongoDB<br></br>
+                            Backend: Nodejs, Expressjs<br></br>
                             Bcrypt is used for encrypting the passwords and JWT is used for authentication.
                         </Typography>
                     </CardContent>
@@ -66,7 +99,7 @@ function Projects(){
             {isModal1Open && (
             <FastmailDetails isOpen={isModal1Open} onClose={closeModal1} />
             )}
-            <Card sx={{ maxWidth: 500, height:430, elevation:3 }} onClick={openModal2}>
+            <Card sx={{ width: 500, height:470, elevation:3 }} onClick={openModal2}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -78,9 +111,9 @@ function Projects(){
                             Movie Info
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            ' Movie Info' is a movie app giving information about movies.
-                            Frontend: Reactjs
-                            Database: MongoDB
+                            ' Movie Info' is a movie app giving information about movies.<br></br>
+                            Frontend: Reactjs, Material UI<br></br>
+                            Database: MongoDB<br></br>
                             Backend: Nodejs, Expressjs
                            
                         </Typography>
@@ -91,7 +124,7 @@ function Projects(){
             {isModal2Open && (
             <MovieAppDetails isOpen={isModal2Open} onClose={closeModal2} />
             )}
-            <Card sx={{ maxWidth: 500, height:430, elevation:3 }} onClick={openModal3}>
+            <Card sx={{ width: 500, height:470, elevation:3 }} onClick={openModal3}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -103,9 +136,9 @@ function Projects(){
                         Shopping Assistant
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            'Shopping Assistant' is a web scraping app giving details about items from two different ecommerce websites.
-                            Frontend: Reactjs
-                            Database: MongoDB
+                            'Shopping Assistant' is a web scraping app giving details about items from two different ecommerce websites.<br></br>
+                            Frontend: Reactjs<br></br>
+                            Database: MongoDB<br></br>
                             Backend: Nodejs, Expressjs
                            
                         </Typography>

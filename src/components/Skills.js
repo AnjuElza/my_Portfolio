@@ -34,10 +34,7 @@ function Skills(){
             skill:"REACT JS",
             logo:React_icon
         },
-        {
-            skill:"REDUX",
-            logo:Redux_icon
-        },
+       
         {
             skill:"BOOTSTRAP",
             logo:Bootstrap_icon

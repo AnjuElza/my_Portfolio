@@ -26,7 +26,7 @@ export function MovieAppDetails({ onClose }) {
                 <h2>Movie Info App</h2>
                 <h5>Project Overview</h5>
                 <p>Movie Info App is an app giving details about movie like name,summary,rating,poster and trailer. Fetaures like Add movie, Edit movie
-                    and Delete movie are isModalOpenusing CRUD operations. Formik is used for form validation.
+                    and Delete movie are implemented using CRUD operations. Formik is used for form validation.
                 </p>
 
                 <p> React is used for building UI. Material UI(mui) is also used. The movie is added to the database here.
