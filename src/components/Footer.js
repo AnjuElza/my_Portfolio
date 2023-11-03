@@ -26,7 +26,9 @@ function Footer(){
                   borderRight: '15px solid blue', display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  flexDirection: 'column' }} 
+                  flexDirection: 'column',
+                  width: '100vw',
+                }} 
             elevation={3} 
             >
         <BottomNavigation >

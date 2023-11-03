@@ -1,10 +1,22 @@
-#contact_container{
+/* #contact_container{
     height: 100vh;
     width: 100%; 
     background: #f0f0f0;
+} */
+#contact_container {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#contact{
-    padding: 3px;
+
+#contact {
+  max-width: 100%;
+  padding: 3px;
+  width: 100%;
 }
 
 .contact_heading{
@@ -18,7 +30,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 700px;
+    max-width: 60vw;
     margin: 0 auto;
     margin-top: 25px;
     /* justify-content: space-around; */
@@ -40,7 +52,7 @@ form {
   
   input,
   textarea {
-    width: 400px;
+    width: 40vw;
     padding: 20px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -63,11 +75,3 @@ form {
   #form_submit_button:hover {
     background-color: #0056b3;
   }
-  /* Media query for smaller screens, adjust as needed */
-  @media (max-width: 768px) {
-  #contact_container{
-    height: auto; /* Remove the fixed height and let the content determine the height */
-      min-height: 100vh; /* Ensure the page takes at least the full viewport height */
-    }
-  }
-  

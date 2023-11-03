@@ -27,8 +27,8 @@ function Header() {
     setMenuAnchor(null);
   };
 
-  const pages = ['About', 'Skills', 'Projects', 'Contact Me'];
-
+  const pages = ['About', 'Skills', 'Projects', 'Contact'];
+ 
   return (
     <AppBar
       className='navbar'
@@ -52,8 +52,9 @@ function Header() {
                 fontSize: '1.5rem',
                 color: 'black',
                 textDecoration: 'none',
-                '@media (max-width: 600px)': {
+                '@media (max-width: 768px)': {
                   fontSize: '1rem', // Adjust font size for smaller screens
+                  margin: '0',
                 },
               }}
             >
@@ -64,13 +65,16 @@ function Header() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page, index) => (
                 <Button
+                
                   key={index}
-                  sx={{ mx: 2, color: 'black' }}
+                  sx={{ mx: 2, color: 'black'}}
                 >
                   <Link to={page.toLowerCase()} smooth={true} duration={500} offset={-90}>
                     {page}
                   </Link>
+                 
                 </Button>
+             
               ))}
               <Button
                 sx={{ mx: 2, color: 'black' }}

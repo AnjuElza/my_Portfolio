@@ -12,8 +12,13 @@
     flex-direction: row;
     align-items: center;
 }
-
-@media (max-width: 600px) {
+.small-screen-link {
+    /* Adjust the offset for smaller screens as needed */
+    margin: 0;
+    padding: 0;
+    transform: translateY(-30px);
+  }
+@media (max-width: 768px) {
     .photo{
         margin-right: 1rem;
     }
@@ -21,5 +26,6 @@
         height: 30px;
         width:30px;
     }
+  
 
   }

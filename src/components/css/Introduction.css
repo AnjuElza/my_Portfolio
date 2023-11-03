@@ -1,4 +1,4 @@
-.name{
+.introduction{
     display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,21 +7,19 @@
   width: 100%;
   background: #f0f0f0;
   font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
 }
 .name_heading{
     font-size: 4rem;
     font-weight: 650;
     margin-bottom: 0.5rem; 
 }
-.name>p{
+.introduction>p{
     font-size: 2rem;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
-.introduction {
-    position: relative;
-  }
   
   .logo {
     position: absolute;
@@ -35,10 +33,18 @@
   }
     /* Media query for smaller screens, adjust as needed */
     @media (max-width: 768px) {
-      .name{
-        height: auto; /* Remove the fixed height and let the content determine the height */
-          min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+     
+        .introduction>p{
+          text-align: center;
         }
+        .introduction>p{
+          font-size: 2rem;
+          margin-top: 0.5rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          text-align: center;
+      }
       }
       
+
 
