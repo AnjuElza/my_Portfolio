@@ -25,6 +25,10 @@
   width: 80%; */
 }
 
+.projects_cards Button{
+margin-top: 5px;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;

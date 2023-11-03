@@ -3,8 +3,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import Button from '@mui/material/Button';
+// import { CardActionArea } from '@mui/material';
+// import Button from '@mui/material/Button';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 import WhatToCook_image from "../constants/images/what_to_cook_logo.png";
 import Fmail_image from "../constants/images/fmail_image.png";
 import movie_app_logo from "../constants/images/movie_app_logo.png";
@@ -64,12 +65,17 @@ function Projects(){
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
                             'What to Cook' is a React app. We can search recipes for an ingredient in this app.<br></br>
-                            Frontend: Reactjs, React Bootstrap
-                           
+                            Frontend: Reactjs, React Bootstrap<br></br><br></br><br></br>
+                            {/* <Button size="small" onClick={openModal0}>Learn More</Button> */}
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal0}>Learn More</Button>
+                    
                 </CardActionArea>
+                <CardActions>
+        <Button size="medium" color="primary" onClick={openModal0}>
+        Learn More
+        </Button>
+      </CardActions>
             </Card>
             {isModal0Open && (
             <WhatToCooklDetails isOpen={isModal0Open} onClose={closeModal0} />
@@ -89,12 +95,17 @@ function Projects(){
                             FastMail is a fullstack emailing app similar to GMail, usig MERN stack.<br></br>
                             Frontend: Reactjs<br></br>
                             Database: MongoDB<br></br>
-                            Backend: Nodejs, Expressjs<br></br>
-                            Bcrypt is used for encrypting the passwords and JWT is used for authentication.
+                            Backend: Nodejs, Expressjs<br></br><br></br>
+                            {/* <Button size="small" onClick={openModal1}>Learn More</Button> */}
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal1}>Learn More</Button>
+                    
                 </CardActionArea>
+                <CardActions>
+        <Button size="medium" color="primary" onClick={openModal1}>
+        Learn More
+        </Button>
+      </CardActions>
             </Card>
             {isModal1Open && (
             <FastmailDetails isOpen={isModal1Open} onClose={closeModal1} />
@@ -111,15 +122,18 @@ function Projects(){
                             Movie Info
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            ' Movie Info' is a movie app giving information about movies.<br></br>
+                            'Movie Info' is a movie app giving information about movies.<br></br>
                             Frontend: Reactjs, Material UI<br></br>
                             Database: MongoDB<br></br>
-                            Backend: Nodejs, Expressjs
-                           
+                            Backend: Nodejs, Expressjs<br></br><br></br>
+                            {/* <Button size="small" onClick={openModal2}>Learn More</Button> */}
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal2}>Learn More</Button>
+                   
                 </CardActionArea>
+                <CardActions>
+                <Button size="medium"  color="primary" onClick={openModal2}>Learn More</Button>
+                </CardActions>
             </Card>
             {isModal2Open && (
             <MovieAppDetails isOpen={isModal2Open} onClose={closeModal2} />
@@ -139,12 +153,15 @@ function Projects(){
                             'Shopping Assistant' is a web scraping app giving details about items from two different ecommerce websites.<br></br>
                             Frontend: Reactjs<br></br>
                             Database: MongoDB<br></br>
-                            Backend: Nodejs, Expressjs
-                           
+                            Backend: Nodejs, Expressjs<br></br>
+                            {/* <Button size="small" onClick={openModal3}>Learn More</Button> */}
                         </Typography>
                     </CardContent>
-                    <Button size="small" onClick={openModal3}>Learn More</Button>
+                    
                 </CardActionArea>
+                <CardActions>
+                <Button size="medium"  color="primary" onClick={openModal3}>Learn More</Button>
+                </CardActions>
             </Card>
             {isModal3Open && (
             <ShoppingAssistantDetails isOpen={isModal3Open} onClose={closeModal3} />

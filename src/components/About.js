@@ -25,7 +25,7 @@ function About(){
        </Box>
        
             <Paper elevation={3} 
-                sx={{ width: '40%', height: 'fit-content', ml: 15, mt: 5, padding:3, mb:3, fontSize:18, display: 'flex', 
+                sx={{ width: '45%', height: 'fit-content', ml: '20vw', mt: 5, padding:3, mb:3, fontSize:18, display: 'flex', 
                 flexDirection: 'column', alignItems: 'center', textAlign: 'justify'  }}>
             <><p>
                
