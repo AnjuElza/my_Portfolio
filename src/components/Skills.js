@@ -73,7 +73,12 @@ function Skills(){
                 <Paper elevation={4}
                     sx={{ width:'100px',
                     height: '100px',
-                     mt: 2, padding: 1, mb: 2, borderBottom: '3px solid blue' }}>
+                     mt: 2, padding: 1, mb: 2, borderBottom: '3px solid blue',
+                     '@media (max-width: 768px)': {
+                       width: '50px', /* Increased width for smaller screens */
+                       height: '50px' /* Center the element by removing ml: '20vw' */
+                       
+                     }, }}>
                     <img className="skill_img"
                         src={logo}
                         alt="logo"

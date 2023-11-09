@@ -52,7 +52,7 @@ function Projects(){
         <div id="projects">
         <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
-        <Card sx={{ width: 500, height:470 , elevation:3 }} onClick={openModal0}>
+        <Card sx={{ width: 560, height:500 , elevation:3, textAlign: 'justify' }} onClick={openModal0}>
                 <CardActionArea >
                     <CardMedia
                         component="img"

@@ -14,7 +14,7 @@ export function FastmailDetails({ onClose }) {
         window.open('https://github.com/AnjuElza/gmail-clone-backend/', '_blank');
     };
     return (
-        <div className="modal-overlay">
+        <div className="modal-overlay modal-container">
             <div className="modal-content">
             <div className="close-button-container">
       <Button className="close-button" onClick={onClose} variant="contained" color="error" sx={{ p: '1px' }}>

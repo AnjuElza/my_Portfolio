@@ -35,9 +35,6 @@
     @media (max-width: 768px) {
      
         .introduction>p{
-          text-align: center;
-        }
-        .introduction>p{
           font-size: 2rem;
           margin-top: 0.5rem;
           margin-left: 0.5rem;

@@ -4,7 +4,9 @@
     justify-content: space-around;
 }
 .about_container{
-    height: 100vh;
+    /* height: 100vh; */
+    /* height: auto;
+  min-height: 100vh; */
     width: 100%; 
 }
 .about_heading{
@@ -25,11 +27,10 @@
     font-size:x-large;
     font-weight: 700;
 } */
-/* Media query for smaller screens, adjust as needed */
-@media (max-width: 768px) {
-    .about_container {
+ /* Media query for smaller screens, adjust as needed */
+ @media (max-width: 768px) {
+   Paper {
       height: auto; /* Remove the fixed height and let the content determine the height */
-      min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+        min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+      }
     }
-    
-  }

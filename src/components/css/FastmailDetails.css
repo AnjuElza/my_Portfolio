@@ -21,3 +21,12 @@
   .button-container button {
     margin: 0 5px; /* Adjust the horizontal spacing between buttons */
   }
+
+  @media (max-width: 768px) {
+    .modal-content{
+    font-size: 0.75em;
+   }
+   /* Button{
+    font-size: 0.5rem;
+   } */
+    }

@@ -44,5 +44,9 @@
       height: auto; /* Remove the fixed height and let the content determine the height */
         min-height: 100vh; /* Ensure the page takes at least the full viewport height */
       }
+      .skill_img {
+        height: 50px; /* Adjust the height for smaller screens */
+        width: 50px;
+      }
     }
     

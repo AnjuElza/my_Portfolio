@@ -12,12 +12,10 @@
     flex-direction: row;
     align-items: center;
 }
-.small-screen-link {
-    /* Adjust the offset for smaller screens as needed */
-    margin: 0;
-    padding: 0;
-    transform: translateY(-30px);
+.about {
+    scroll-margin-top: 90px; /* Default offset for larger screens */
   }
+  
 @media (max-width: 768px) {
     .photo{
         margin-right: 1rem;
@@ -26,6 +24,9 @@
         height: 30px;
         width:30px;
     }
+    .about {
+        scroll-margin-top: 180px; /* Default offset for larger screens */
+      }
   
 
   }

@@ -26,7 +26,12 @@ function About(){
        
             <Paper elevation={3} 
                 sx={{ width: '45%', height: 'fit-content', ml: '20vw', mt: 5, padding:3, mb:3, fontSize:18, display: 'flex', 
-                flexDirection: 'column', alignItems: 'center', textAlign: 'justify'  }}>
+                flexDirection: 'column', alignItems: 'center', textAlign: 'justify' ,
+                '@media (max-width: 768px)': {
+                  width: '60%', /* Increased width for smaller screens */
+                  ml: 'auto', /* Center the element by removing ml: '20vw' */
+                  mr: 'auto',
+                }, }}>
             <><p>
                
                 I am a motivated and detail-oriented fullstack MERN developer, also interested in Frontend React developer jobs. 

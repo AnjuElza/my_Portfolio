@@ -11,14 +11,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Logo from "../constants/images/anju_logo.jpg";
 import './css/Header.css';
-
+import  { useEffect, useState } from 'react';
 const resumePdfLink = 'https://drive.google.com/file/d/1HyKIkJlNl8KmaFivxzaBG8G1geWcALEo/view?usp=drive_link';
 
 
 
 function Header() {
-  const [menuAnchor, setMenuAnchor] = React.useState(null);
-
+  const [menuAnchor, setMenuAnchor] = useState(null);
+  const [offset, setOffset] = useState(-90); // Default offset
   const openMenu = (event) => {
     setMenuAnchor(event.currentTarget);
   };
@@ -28,7 +28,30 @@ function Header() {
   };
 
   const pages = ['About', 'Skills', 'Projects', 'Contact'];
- 
+  
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        // Adjust the offset for smaller screens
+        setOffset(80); // You can adjust this value
+      } else {
+        // Default offset for larger screens
+        setOffset(-90);
+      }
+    };
+
+    // Set initial offset
+    handleResize();
+
+    // Update offset on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <AppBar
       className='navbar'
@@ -69,10 +92,13 @@ function Header() {
                   key={index}
                   sx={{ mx: 2, color: 'black'}}
                 >
-                  <Link to={page.toLowerCase()} smooth={true} duration={500} offset={-90}>
+                  {/* <Link to={page.toLowerCase()} smooth={true} duration={500} offset={-90}>
                     {page}
-                  </Link>
-                 
+                  </Link> */}
+                 <Link to={page.toLowerCase()} smooth={true} duration={500} offset={offset}>
+      {page}
+    </Link>
+
                 </Button>
              
               ))}
