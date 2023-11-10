@@ -10,7 +10,7 @@ import WhatToCook_image from "../constants/images/what_to_cook_logo.png";
 import Fmail_image from "../constants/images/fmail_image.png";
 import movie_app_logo from "../constants/images/movie_app_logo.png";
 import shopping_logo from "../constants/images/shopping_logo.png";
-
+import ProjectCard from './ProjectCard';
 import './css/Projects.css';
 import { WhatToCooklDetails } from './WhatToCook';
 import { FastmailDetails } from './FastmailDetails';
@@ -48,7 +48,71 @@ function Projects(){
       const closeModal3 = () => {
         setIsModal3Open(false);
       };
+      // const projectData = [
+      //   {
+      //     image: WhatToCook_image,
+      //     title: 'What to Cook',
+      //     description: "'What to Cook' is a React app. We can search recipes for an ingredient in this app. Frontend: Reactjs, React Bootstrap",
+      //     openModal: openModal0,
+      //     isModalOpen: isModal0Open,
+      //     closeModal: closeModal0,
+      //     detailsComponent: <WhatToCooklDetails />,
+      //   },
+      //   {
+      //       image: Fmail_image,
+      //       title: 'FastMail',
+      //       description: `FastMail is a fullstack emailing app similar to GMail, usig MERN stack.
+      //                                Frontend: Reactjs
+      //                                Database: MongoDB
+      //                                Backend: Nodejs, Expressjs
+                                     
+                                     
+      //                                `,
+      //       openModal: openModal1,
+      //       isModalOpen: isModal1Open,
+      //       closeModal: closeModal1,
+      //       detailsComponent: <FastmailDetails />,
+      //     },
+      //     {
+      //       image: movie_app_logo,
+      //       title: 'Movie Info',
+      //       description: `'Movie Info' is a movie app giving information about movies.
+      //                                Frontend: Reactjs, Material UI
+      //                                Database: MongoDB
+      //                                Backend: Nodejs, Expressjs
+                                     
+                                     
+      //                                `,
+      //       openModal: openModal2,
+      //       isModalOpen: isModal2Open,
+      //       closeModal: closeModal2,
+      //       detailsComponent: <MovieAppDetails />,
+      //     },
+      //     {
+      //       image: shopping_logo,
+      //       title: 'Shopping Assistant',
+      //       description: `'Shopping Assistant' is a web scraping app giving details about items from two different ecommerce websites.
+      //                                Frontend: Reactjs
+      //                                Database: MongoDB
+      //                                Backend: Nodejs, Expressjs
+                                     
+      //                                `,
+      //       openModal: openModal3,
+      //       isModalOpen: isModal3Open,
+      //       closeModal: closeModal3,
+      //       detailsComponent: <ShoppingAssistantDetails />,
+      //     },
+      // ];
     return(
+    //     <div id="projects">
+    //     <p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
+    //     <div className='projects_cards'>
+    //     {projectData.map((project, index) => (
+    //       <ProjectCard key={index} {...project} />
+    //     ))}
+    //   </div>
+    //   </div>
+    // )
         <div id="projects">
         <><p className='proj_heading'><span className="blue-letter">P</span>ROJECTS</p>
         <div className='projects_cards'>
@@ -80,7 +144,7 @@ function Projects(){
             {isModal0Open && (
             <WhatToCooklDetails isOpen={isModal0Open} onClose={closeModal0} />
             )}
-            <Card sx={{ width: 500, height:470 , elevation:3 }} onClick={openModal1}>
+            <Card sx={{ width: 560, height:500 , elevation:3 }} onClick={openModal1}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -110,7 +174,7 @@ function Projects(){
             {isModal1Open && (
             <FastmailDetails isOpen={isModal1Open} onClose={closeModal1} />
             )}
-            <Card sx={{ width: 500, height:470, elevation:3 }} onClick={openModal2}>
+            <Card sx={{ width: 560, height:500, elevation:3 }} onClick={openModal2}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
@@ -138,7 +202,7 @@ function Projects(){
             {isModal2Open && (
             <MovieAppDetails isOpen={isModal2Open} onClose={closeModal2} />
             )}
-            <Card sx={{ width: 500, height:470, elevation:3 }} onClick={openModal3}>
+            <Card sx={{ width: 560, height:500, elevation:3 }} onClick={openModal3}>
                 <CardActionArea >
                     <CardMedia
                         component="img"
