@@ -102,14 +102,14 @@ function Header() {
                 </Button>
              
               ))}
-              <Button
+              {/* <Button
                 sx={{ mx: 2, color: 'black' }}
                 href={resumePdfLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Resume
-              </Button>
+              </Button> */}
             </Box>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
